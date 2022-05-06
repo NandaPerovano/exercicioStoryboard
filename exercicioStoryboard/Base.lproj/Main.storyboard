@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exercicioStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtq-qc-Fiu">
+                                <rect key="frame" x="20" y="418.5" width="374" height="59"/>
+                                <color key="backgroundColor" red="0.79738873669999999" green="0.51589837530000004" blue="0.69483455390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNI-3g-x6F">
+                                <rect key="frame" x="20" y="603" width="374" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="Sortear Nome"/>
+                                <connections>
+                                    <action selector="nomesSorteados:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yL8-kB-pHY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wtq-qc-Fiu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FWf-ca-JWI"/>
+                            <constraint firstItem="CNI-3g-x6F" firstAttribute="width" secondItem="wtq-qc-Fiu" secondAttribute="width" id="Jcp-Li-xoZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CNI-3g-x6F" secondAttribute="bottom" constant="200" id="QBf-wz-70Q"/>
+                            <constraint firstItem="wtq-qc-Fiu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j5c-xT-koe"/>
+                            <constraint firstItem="CNI-3g-x6F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lxr-9x-GHd"/>
+                            <constraint firstItem="CNI-3g-x6F" firstAttribute="height" secondItem="wtq-qc-Fiu" secondAttribute="height" id="qOE-9D-0jh"/>
+                            <constraint firstItem="wtq-qc-Fiu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5O-4U-6fn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wtq-qc-Fiu" secondAttribute="trailing" constant="20" id="uoD-dA-TKO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nomes" destination="wtq-qc-Fiu" id="SFL-4R-dIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="130"/>
+        </scene>
+    </scenes>
+</document>
